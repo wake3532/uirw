@@ -97,3 +97,6 @@ async def on_message(message):
         embed.add_field(name="가장 높은등급인 역할", value=user.top_role.mention,  inline = False)
         embed.add_field(name ="상태", value =user.status, inline = False)
         await message.channel.send(embed=embed)
+        
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
